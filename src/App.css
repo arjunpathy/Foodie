@@ -1,0 +1,75 @@
+
+body{
+    background-color: #213547 !important;
+}
+.mainContainer{
+    display: flex;
+   
+}
+
+.container{
+    width: 33vw;
+    height: 95vh;
+    border: 1px solid wheat;
+    text-align: center;
+}
+
+.custom_list_item{
+    border: 1px solid gray;
+    background-color: lightgrey;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    margin: 10px 0;
+}
+.form-check-reverse, .form-check-reverse input{
+    text-align: center !important;
+}
+
+
+/* /////////////////////////////// */
+
+.kitchen_container{
+    border: 1px solid wheat;
+    border-radius: 20px;
+    height: 50%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.kitchen_container_items{
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid wheat;
+    font-size: 18px;
+    border-radius: 10px;
+    color: black;
+    background-color: #F2E8CF;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+
+.pagination{
+    justify-content: center;
+}
+.recipe_container{
+color: #fff;
+}
+
+.recipe_container img{
+    border-radius: 12px;
+    height: 40%;
+    width: 60%;
+}
+
+.recipe_container ol{
+    overflow-y: scroll;
+    max-height: 45vh;
+    text-align: left;
+}

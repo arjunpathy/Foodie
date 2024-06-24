@@ -1,0 +1,11 @@
+.items-list{
+    margin: 5%;
+    padding: 1%;
+    border: 1px solid white;
+    border-radius: 12px;
+    display: flex;
+}
+.item_list_container{
+   height: 100%;
+   border: 1px solid black; 
+}
