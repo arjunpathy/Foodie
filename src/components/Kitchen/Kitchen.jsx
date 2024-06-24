@@ -9,7 +9,7 @@ const KitchenComponent = ({ selectedIngredients, setRecipes }) => {
 
 
   const fetchData = async () => {
-    const apiKey = "2071c2e73e8543e6a587aa659d2d4d80" //"8a9f25408162479dabbfef46179cccf0";
+    const apiKey = "2071c2e73e8543e6a587aa659d2d4d80" //process.env.REACT_APP_FOODIE_API_KEY
     const ingredients = selectedIngredients.join(',+');
     const url = `https://api.spoonacular.com/recipes/complexSearch?includeIngredients=${ingredients}&addRecipeInstructions=true&number=5&apiKey=${apiKey}`;
 

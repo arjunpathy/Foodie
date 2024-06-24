@@ -10,7 +10,7 @@ const RecipeComponent = ({ recipes, pageCount }) => {
   const [currentPage, setCurrentPage] = useState(0);
   let url = pageCount && recipes[currentPage]['image'] ? recipes[currentPage]['image'] : "";
   let title = pageCount ? recipes[currentPage]['title'] : "No Recipes Found!";
-  let instructions = pageCount ? recipes[currentPage]['analyzedInstructions'][0]['steps'] : [];
+  let instructions = pageCount && recipes[currentPage]['analyzedInstructions'].length ? recipes[currentPage]['analyzedInstructions'][0]['steps'] : []
 
   const handleClick = (page) => {
     setCurrentPage(page)
@@ -30,7 +30,7 @@ const RecipeComponent = ({ recipes, pageCount }) => {
       <h1>Recipe Component</h1>
       <Pagination>{items}</Pagination>
       <div className='recipe_container'>
-        {url ? <img src={url}></img> : ""}
+        {url ? <img src={url} alt={title}></img> : ""}
         <h4>{title}</h4>
         <ol className='list'>
           {
